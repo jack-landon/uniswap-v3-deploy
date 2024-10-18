@@ -2,27 +2,11 @@
 src = "src"
 out = "out"
 libs = ["lib"]
-solc_version = "0.8.20"
+solc_version = "0.7.6"
 remappings = [
     "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
-    "@uniswap/v3-core/=lib/v3-core/contracts/"
+    "@uniswap/v3-core/=lib/v3-core/",
+    "@uniswap/v3-periphery/=lib/v3-periphery/"
 ]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
-
-# RPC_URL="https://arb-sepolia.g.alchemy.com/v2/c6SDbF_tLXhMZGXWxSMgd-YqcPriLnEo"
-# ADDRESS=0x3d446fb6Bff1fcC04A9ea78FebcdB5e316d7BD69
-# PRIVATE_KEY=ab949ae59658fc4e8b2c0650c956746005142ac2893d55188d5686d465f1cd10
-
-# TOKENA Address = 0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6
-# TOKENB Address = 0x8A791620dd6260079BF849Dc5567aDC3F2FdC318
-
-
-# UNISWAP V3
-# ANVIL: forge script script/UniswapV3Factory.s.sol:UniV3DeployScript --rpc-url 127.0.0.1:8545 --broadcast --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 -vvv
-
-# ERC20
-# ANVIL: forge script script/ERC20.s.sol:ERC20DeployScript --rpc-url 127.0.0.1:8545 --broadcast --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 -vvv
-
-
-# ARBITRUM: forge script script/UniswapV3Factory.s.sol:UniV3DeployScript --rpc-url https://arb-sepolia.g.alchemy.com/v2/c6SDbF_tLXhMZGXWxSMgd-YqcPriLnEo --broadcast --private-key ab949ae59658fc4e8b2c0650c956746005142ac2893d55188d5686d465f1cd10 -vvv
